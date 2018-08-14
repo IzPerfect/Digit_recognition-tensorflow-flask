@@ -13,7 +13,7 @@ Requirement
 Usage
 ---
 ### Command
-'python app_main.py'
+`python app_main.py`
 
 웹 브라우저에서 '127.0.0.1:5100' or 'localhost:5100'으로 접속
 
