@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Canvas drawboard</title>
+    <meta charset="utf-8">
+
+    <body style= "background-color:#E5EBF7;">
+
+    <div style="text-align:center">
+    <h2>Number recognition using Convolution Neural Network</h2>
+    <h2>Draw : 0~9</h2>
+    </div>
+  </head>
+  <body>
+    <div id="container">
+      <canvas id="drawCanvas" width="280  " height="280"
+            style="border: 4px solid blue; display: block; margin: auto; padding-left: 0; padding-right: 0; text-align:center"></canvas>
+    </div>
+    <div style = "text-align:center">
+
+      <strong>선굵기 선택</strong><br>
+      <input type="button" value="  " class="colors" style="border: none; background-color:black; width:100px; height:5px;" onclick="changeLineWidth(5)">
+      <input type="button" value="  " class="colors" style="border: none; background-color:black; width:100px; height:10px;" onclick="changeLineWidth(10)"/>
+      <input type="button" value="  " class="colors" style="border: none; background-color:black; width:100px; height:15px;" onclick="changeLineWidth(15)"/><br>
+
+      <br><input type = 'button' style ='width:60pt;height:30pt;'id ='clear' value = 'Clear' onclick="clearBoard()">
+      <input type = 'button' style ='width:60pt;height:30pt;'id ='save' value = 'Save' onclick="saveBoard()">
+      <input type = 'button' style ='width:60pt;height:30pt;'id ='predict' value = 'Predict' onclick="predictlocalBoard()"><br>
+    </div>
+
+    <div style = "font-weight: bold;font-style: italic; font-size: 30px; text-align:center"><br>예상 결과</div>
+    <div id = "show" style = "color: green; font-size: 80px; text-align:center">Blank</div>
+
+  <script type = "text/javascript" src = "{{ url_for('static', filename = 'js/canvas_action.js')}}"></script>
+  </body>
+</html>

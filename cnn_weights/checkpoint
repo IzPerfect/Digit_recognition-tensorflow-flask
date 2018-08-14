@@ -1,0 +1,6 @@
+model_checkpoint_path: "cnn_weights.ckpt-9"
+all_model_checkpoint_paths: "cnn_weights.ckpt-5"
+all_model_checkpoint_paths: "cnn_weights.ckpt-6"
+all_model_checkpoint_paths: "cnn_weights.ckpt-7"
+all_model_checkpoint_paths: "cnn_weights.ckpt-8"
+all_model_checkpoint_paths: "cnn_weights.ckpt-9"
